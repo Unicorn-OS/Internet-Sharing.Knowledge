@@ -1,0 +1,19 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    # NAT from KVM
+    enp1s0:
+      dhcp4: true
+      dhcp6: true
+    # for Internet Sharing, VFIO Passthrough
+    ens1:
+      dhcp4: false
+      dhcp6: false
+      addresses:
+      - 10.0.0.2/24
+      routes:
+      - to: default
+        via: 10.0.0.1
+      nameservers:
+       addresses: [8.8.8.8,8.8.4.4]

@@ -1,4 +1,5 @@
 # https://wiki.archlinux.org/title/Internet_sharing
+
 file=/etc/sysctl.d/10-internet-sharing.conf
 
 # Enable packet forwarding

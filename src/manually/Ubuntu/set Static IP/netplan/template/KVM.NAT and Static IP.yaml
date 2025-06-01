@@ -10,10 +10,7 @@ network:
     ens1:
       dhcp4: false
       dhcp6: false
+      # Must match `subnet` in vars/main.sh file!
       addresses:
       - 10.42.0.1/24
-#      routes:
-#      - to: default
-#        via: 10.0.0.1
-#      nameservers:
-#       addresses: [8.8.8.8,8.8.4.4]
+

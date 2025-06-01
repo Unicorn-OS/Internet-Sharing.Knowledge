@@ -15,3 +15,6 @@ sudo chown root:root $toFile
 sudo chmod 644 $toFile
 
 sudo netplan --debug apply
+
+# Reboot required so that netplan's `renderer: networkd` overrides NetworkManager
+sudo reboot

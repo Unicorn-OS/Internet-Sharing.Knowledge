@@ -21,3 +21,8 @@ uses:
 - netplan
 - iptables
 - dnsmasq
+
+# Troubleshooting
+You may Have to Disconnect & reconnect the LAN ethernet cable to the switch after running `iptables.sh`. Then run `ping` on a node connnected to it!   
+
+- Make sure your Network interfaces in all scripts matches your machine, with `ip a`. Change where needed.

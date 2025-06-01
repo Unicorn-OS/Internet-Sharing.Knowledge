@@ -4,6 +4,6 @@ sudo systemctl enable systemd-networkd
 sudo systemctl start systemd-networkd
 
 sudo rm /etc/netplan/*
-sudo cp template/01-network-manager-all.yaml /etc/netplan/
+sudo cp template/KVM.NAT and Static IP.yaml /etc/netplan/01-network-manager-all.yaml
 
 sudo netplan --debug apply

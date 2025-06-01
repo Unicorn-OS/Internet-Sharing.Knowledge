@@ -17,10 +17,10 @@ mkdir -p $iptables_dir
 iptables-save -f ${iptables_dir}/rules.v4
 
 iptables_persistent(){
+	# if No Package available - build from source!
 	#sudo apt install iptables-persistent	# systemd service
-	# if No Package available - build from source!	
+
 	# This build requires manual input, at certain steps! TODO: Automate
-	cd iptables-persistent
 	wget -c https://raw.githubusercontent.com/NetworkingUniversity/IPtables.Knowledge/refs/heads/main/Persist%20on%20Reboot/iptables-persistent%20package/build%20from%20source%3A/build.sh
 	chmod +x build.sh
 	. build.sh
